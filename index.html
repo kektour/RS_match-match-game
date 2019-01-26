@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>match-match-game</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/build/build.js"></script>
+</head>
+
+<body class="page">
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__secondary-container">
+                <button class="game-button js-skirts-button" type="button">Skirt Cards
+                    <div class="header__skirts-container js-skirts">
+                        <ul class="header__skirts js-skirt">
+                            <li class="header__skirt" data-id="0">
+                                <img class="header__skirt-img" src="./img/skirts/0.png" alt="Error">
+                            </li>
+                            <li class="header__skirt" data-id="1">
+                                <img class="header__skirt-img" src="./img/skirts/1.png" alt="Error">
+                            </li>
+                            <li class="header__skirt" data-id="2">
+                                <img class="header__skirt-img" src="./img/skirts/2.png" alt="Error">
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+
+                <button class="game-button js-difficulties-button" type="button">Game Difficulty
+                    <div class="header__difficulties-container js-difficulties">
+                        <ul class="header__difficulty js-difficulty">
+                            <li class="header__difficult" data-rows="2" data-cells="5">
+                                Low (5 x 2)
+                            </li>
+                            <li class="header__difficult" data-rows="3" data-cells="6">
+                                Medium (6 x 3)
+                            </li>
+                            <li class="header__difficult" data-rows="3" data-cells="8">
+                                Higth (8 x 3)
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+            <div class="header__secondary-container">
+                <div class="header__score">Need to find:
+                    <span class="js-score">0</span>
+                    cards
+                </div>
+                <div class="header__timer js-watch">00:00:00</div>
+                <button class="game-button js-new" type="button">New Game</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main"></main>
+
+    <section class="endgame js-congratulations">
+        <div class="endgame__content">
+            <div class="endgame__body">
+                <h2 class="endgame__caption">congratulations</h2>
+                <h2 class="endgame__text">
+                    you passed the game!
+                </h2>
+                <h2 class="endgame__time">
+                    elapsed time
+                    <span class="js-congratulations-time">00:00:00</span>
+                </h2>
+                <button type="button" class="endgame__button js-congratulations-button">main window</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="instructions js-instructions">
+        <div class="instructions__content">
+            <div class="instructions__caption">
+                <h2>How to play:</h2>
+                <p>Memory is a counter game where the objecr is to find pairs.</p>
+                <p>When the game begins, all pixtures are hidden.</p>
+                <h2>To Play:</h2>
+            </div>
+            <ol>
+                <li>Select two cards to try match the pictures.</li>
+                <li>If you match the pictures you can go again.</li>
+                <li>If they don't match it is the computer turn them.</li>
+                <li>The player that finds all pairs wins!</li>
+                <li>Have Fun!</li>
+            </ol>
+            <button type="button" class="instructions__button js-instructions-btn">play</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
